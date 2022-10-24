@@ -15,16 +15,16 @@ const SearchTask = ({tasks, setfoundTasks}) => {
     return (
         <form className="add-form" onSubmit={onSubmit}>
           <div className="todo-form-control">
-          <label>Search Task : </label><> </>
+          <label>Search Task : </label><></>
             <input
               type="text"
               value={searchText}
               onChange={(e) => setsearchText(e.target.value)}
-              placeholder="Enter Task Details"
+              placeholder="Enter Task Details "
             ></input>
           </div>
           <input type="submit" value="Search" className="btn btn-block"></input>
         </form>
-      );
-    };
+      )
+    }
 export default SearchTask

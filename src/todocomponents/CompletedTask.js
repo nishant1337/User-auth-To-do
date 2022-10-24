@@ -1,22 +1,17 @@
 import Task from "./Task";
-const CompletedTask = ({ tasks,setTasks, onDelete, updateStatus }) => {
-
-
+const CompletedTask = ({ tasks, setTasks, onDelete, updateStatus }) => {
   const handleSubmit = (e) => {
     setTasks(tasks.filter((task) => task.status == 0));
   };
 
-
   return (
     <>
-      
-      <span id="typetitle">Completed Tasks 
-      
-        <button className='rmbtn' onClick={handleSubmit}>🗑️</button>
-
+      <span id="typetitle">
+        Completed Tasks
+        <button className="rmbtn" onClick={handleSubmit}>
+          🗑️
+        </button>
       </span>
-
-     
 
       {tasks
         .filter((item) => item.status == true)

@@ -15,10 +15,10 @@ const AddTask = ({ addTask }) => {
   };
   return (
     <>
-  
       <form className="add-form" onSubmit={onSubmit}>
         <div className="todo-form-control">
-          <label>Task Title : </label><> </>
+          <label>Task Title : </label>
+          <> </>
           <input
             type="text"
             value={titletext}
